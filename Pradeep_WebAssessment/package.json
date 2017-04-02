@@ -1,0 +1,17 @@
+{
+  "name": "pradeep_webdevelopmentassessment",
+  "version": "1.0.0",
+  "description": "A Node Assessment",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.76.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Pradeep Kumar Kadapa",
+  "license": "ISC"
+}

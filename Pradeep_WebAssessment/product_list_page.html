@@ -1,0 +1,30 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Lowe's Assessment">
+    <title>Pradeep Kumar - WebAssessment</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+</head>
+
+<body ng-app="productlist" ng-controller="listcontroller">
+    <div class="wrapper">
+        <div class="productDetail-container" ng-if="hoveredObj">
+          <product-detail info="hoveredObj"></product-detail>
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="product-list">
+          <product ng-repeat="obj in productList" info="obj" class="list-items" ng-mouseenter="hoverIn(obj)"></product>
+        </div>
+        
+        <div class="clearfix"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.min.js"></script>
+    <script src="assets/js/productList.js" charset="utf-8"></script>
+</body>
+
+</html>
